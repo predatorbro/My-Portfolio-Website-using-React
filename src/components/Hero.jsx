@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="home" className=" pt-20 md:pt-44 h-[95vh]">
       <div className="max-w-[110rem] px-10 mx-auto flex flex-col-reverse md:flex-row items-center justify-between h-full relative">
         {/* Social Icons */}
-        <div className="absolute left-10 top-[50%]  translate-y-[-50%] md:translate-0 md:top-[unset] md:left-[unset] md:relative flex flex-col gap-6 text-[2.5rem]  md:w-28 justify-center  items-center ">
+        <div className="absolute left-10 top-[45%]  translate-y-[-45%] md:translate-0 md:top-[unset] md:left-[unset] md:relative flex flex-col gap-6 text-[2.5rem]  md:w-28 justify-center  items-center ">
           <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
           <a target="_blank" href="https://wa.me/qr/ITMSCTVDCRWCE1"><i
             className="fa-brands fa-whatsapp"></i></a>
