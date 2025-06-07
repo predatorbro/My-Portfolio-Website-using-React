@@ -14,7 +14,7 @@ const testimonials = [
     image: "img/electroma.png",
     quote:
       "I only asked for a simple website for my business, Electroma Trading — but Prasad bhai delivered a clean, ultra-fast UI with a minimalist design, without charging anything extra. I got impressed from the very first look"
-  } 
+  }
 ];
 
 const Clients = () => {
@@ -29,7 +29,7 @@ const Clients = () => {
   };
 
   return (
-    <section id="testimonial" className="py-30  ">
+    <section id="testimonial" className="py-20 relative mx-4">
 
       <div className="flex py-10 justify-center">
         <h2 className="text-3xl font-bold text-gray-700 relative mt-[-3rem]">
@@ -39,10 +39,10 @@ const Clients = () => {
         </h2>
       </div>
 
-      <div className="relative max-w-5xl mx-auto mt-16 px-4">
-        <div className="bg-white shadow-lg rounded-xl flex flex-col md:flex-row ">
-          <div className="md:w-2/3 p-8 relative">
-            <i className="fa-solid fa-quote-left text-6xl text-[var(--primary)] absolute -top-9 left-3"></i>
+      <div className=" max-w-5xl mx-auto mt-16 shadow-lg rounded-2xl overflow-hidden">
+        <div className="bg-white shadow-lg flex flex-col md:flex-row">
+          <div className="md:w-2/3 p-8 relative min-h-80 ">
+            <i className="fa-solid fa-quote-left text-6xl text-[var(--primary)] absolute bottom-3 left-6"></i>
             <p className="text-lg text-gray-600 z-10 relative">{testimonials[index].quote}</p>
             <h1 className="text-2xl font-bold  text-[var(--primary)]  mt-6">{testimonials[index].name}</h1>
 
@@ -52,15 +52,15 @@ const Clients = () => {
             <img
               src={testimonials[index].image}
               alt={testimonials[index].name}
-              className="w-full h-full object-cover rounded-r-xl"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
 
-        <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 mt-6 flex gap-12 text-4xl cursor-pointer text-gray-600">
-          <i class="fa-solid fa-circle-arrow-left" onClick={prevSlide}></i>
-          <i class="fa-solid fa-circle-arrow-right" onClick={nextSlide}></i>
-        </div>
+      </div>
+      <div className=" mx-auto w-fit mt-10 flex gap-12 text-5xl cursor-pointer text-[var(--primary)]">
+        <i class="fa-solid fa-circle-arrow-left" onClick={prevSlide}></i>
+        <i class="fa-solid fa-circle-arrow-right" onClick={nextSlide}></i>
       </div>
     </section>
   );

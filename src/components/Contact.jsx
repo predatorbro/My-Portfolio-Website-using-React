@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20  text-black">
+    <section id="contact" className="pb-20  text-black">
       {/* Section Title */}
-     <div className="flex justify-center my-20">
+      <div className="flex justify-center my-20">
         <h2 className="text-3xl font-bold text-gray-700 relative mt-[-3rem]">
           Contact Me
           <span className="absolute left-0 bottom-0 w-1/2 h-[3px]  bg-[var(--primary)]  rounded-md"></span>
@@ -35,13 +35,13 @@ const Contact = () => {
               <h2 className="text-lg font-semibold">Message me</h2>
               <p>on Whatsapp</p>
             </a>
-            <a href="mailto:predatorbhai13@gmail.com" className="flex flex-col items-center text-center"  target="_blank" rel="noopener noreferrer">
+            <a href="mailto:predatorbhai13@gmail.com" className="flex flex-col items-center text-center" target="_blank" rel="noopener noreferrer">
               <i className="fa-regular fa-envelope text-[var(--primary)]  text-4xl opacity-80 mb-2" />
               <h2 className="text-lg font-semibold">Mail at</h2>
               <p>predatorbhai13@gmail.com</p>
             </a>
 
-            <a href="https://maps.app.goo.gl/HVPyAz9RAcJAHYi7A" className="flex flex-col items-center text-center"   target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/HVPyAz9RAcJAHYi7A" className="flex flex-col items-center text-center" target="_blank" rel="noopener noreferrer">
               <i className="fa-regular fa-location-dot text-[var(--primary)]  text-4xl opacity-80 mb-2" />
               <h2 className="text-lg font-semibold">Visit at</h2>
               <p>My office, Tokha</p>
@@ -68,6 +68,9 @@ const Contact = () => {
                   className="hover:text-[var(--black6)] text-[var(--primary)] "
                 >
                   <i className="fa-brands fa-linkedin" />
+                </a>
+                <a target="_blank" href="https://github.com/predatorbro"  className="hover:text-[var(--black6)] text-[var(--primary)] "><i
+                  className="fa-brands fa-github"></i>
                 </a>
 
               </div>

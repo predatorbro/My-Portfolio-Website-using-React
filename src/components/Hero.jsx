@@ -11,7 +11,7 @@ const Hero = () => {
             className="fa-brands fa-whatsapp"></i></a>
           <a target="_blank" href="https://www.linkedin.com/in/bibeksah/"><i
             className="fa-brands fa-linkedin"></i></a>
-
+          
         </div>
 
         {/* Hero Text */}

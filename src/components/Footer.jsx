@@ -37,13 +37,15 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="text-right">
-          <h1 className="text-xl font-semibold mb-4">Social Links</h1>
+          <h1 className="text-xl font-semibold mb-4 text-center">Social Links</h1>
           <div className="flex justify-end space-x-6 text-2xl">
             <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
             <a target="_blank" href="https://wa.me/qr/ITMSCTVDCRWCE1"><i
               className="fa-brands fa-whatsapp"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/bibeksah/"><i
               className="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/predatorbro"><i
+              className="fa-brands fa-github"></i></a>
 
           </div>
         </div>
