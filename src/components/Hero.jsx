@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-start w-full md:w-[45%] space-y-4" data-aos="fade-up">
           <p className="text-[2rem] lg:text-[2.5rem] font-semibold text-gray-600">Hi, Your mechanic for</p>
           <p className="text-5xl sm:text-6xl  font-bold tracking-wide text-black">
-            Websites & webapps
+            websites & webapps
           </p>
           <p className="text-[2rem] lg:text-[2.5rem]  font-semibold text-gray-600">
             is here!!
