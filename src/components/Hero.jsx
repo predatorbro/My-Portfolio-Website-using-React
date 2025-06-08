@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="slider" id="slider">
               <div className="slider-box  overflow-x-hidden  sm:rounded-xl  shadow-lg ">
                 <div
-                  className="content flex transition-transform duration-700 ease-in-out  md:aspect-square xs:aspect-video aspect-square "
+                  className="content  flex transition-transform duration-700 ease-in-out  md:aspect-square xs:aspect-video aspect-square "
                   ref={contentRef}
                 >
                   <img src="/img/hero (1).png" alt="img5" className="w-full flex-shrink-0 object-cover" />
