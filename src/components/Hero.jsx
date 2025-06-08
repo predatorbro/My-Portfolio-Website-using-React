@@ -10,7 +10,7 @@ const Hero = () => {
 
     const interval = setInterval(() => {
       setCount(prev => (prev + 1) % contentLength); // 5 images
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
