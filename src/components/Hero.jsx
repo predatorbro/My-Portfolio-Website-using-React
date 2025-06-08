@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="grid place-content-center mb-15   w-[90%] md:w-[45%]" data-aos="fade-up">
             <div className="slider" id="slider">
-              <div className="slider-box  overflow-x-hidden  sm:rounded-xl  shadow-lg ">
+              <div className="slider-box  overflow-x-hidden  rounded-xl  shadow-lg  ">
                 <div
                   className="content  flex transition-transform duration-700 ease-in-out  md:aspect-square xs:aspect-video aspect-square "
                   ref={contentRef}
