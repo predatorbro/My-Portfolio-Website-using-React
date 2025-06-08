@@ -35,7 +35,7 @@ const About = () => {
             data-aos="fade-up"
             className="text-xl font-semibold text-gray-600 pl-4"
           >
-           An Emerging Web Developer making Clients ideas, a Reality! 
+            An Emerging Web Developer making Clients ideas, a Reality!
           </p>
           <p
             data-aos="fade-up"
@@ -68,8 +68,9 @@ const About = () => {
           <button
             data-aos="fade-up"
             className="mt-6 inline-flex items-center px-6 py-3 bg-[var(--primary)] text-[var(--white-main)] font-semibold rounded-md shadow-md hover:opacity-80"
-          >
-            Download CV  <i class="fas fa-download"></i>
+          > <a href="#projects" className="flex items-center gap-3">
+              Inspect Portfolio <i className=" fa-regular fa-arrow-trend-up"></i>
+            </a>
           </button>
         </div>
       </div>
