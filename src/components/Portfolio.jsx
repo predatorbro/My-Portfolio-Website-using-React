@@ -22,14 +22,23 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Business Profile Website - Electroma Trading",
+      title: "Business Profile Website - Electroma Trading (on going project)",
       image: "img/electroma.png",
       link: "https://",
       description:
         "Business profile website for Electroma Trading, a company specializing in electronic products. The website showcases the company's offerings, including product categories, featured products, and contact information. It is designed to be visually appealing and user-friendly, providing a seamless experience for visitors."
     },
+
     {
       id: 3,
+      title: "Resturant Profile Website - Prime Chiya (on going project)",
+      image: "img/primechiya.png",
+      link: " https://primechiya.netlify.app/",
+      description:
+        "Unable to provide a description for this project at the moment. However, it is a restaurant profile website for Prime Chiya, showcasing their offerings and ambiance. (ongoing project)"
+    },
+    {
+      id: 4,
       title: "Portfolio Website - Prasad Bhai",
       image: "img/port.png",
       link: "/",
@@ -37,7 +46,7 @@ const Portfolio = () => {
         "My personal portfolio website showcasing my skills, projects, and contact information. It is designed to be responsive and user-friendly, providing a seamless experience across devices. The website features sections for my work, skills, and a contact form for inquiries."
     },
     {
-      id: 4,
+      id: 5,
       title: "Sample Portfolio Website - Camera Squad",
       image: "img/port%20(2).png",
       link: "https://camerasquad.netlify.app/",
@@ -45,20 +54,12 @@ const Portfolio = () => {
         "This is a portfolio website for a photography team called Camera Squad. The design is inspired from FreeHTMLTemplates, I made this in beginning days to learn Flexbox and CSS Grid.  "
     },
     {
-      id: 5,
+      id: 6,
       title: "Sample Portfolio Website - imPredator",
       image: "img/port%20(1).png",
       link: "https://impredator99.netlify.app/",
       description:
         "This is a sample portfolio website created to demonstrate my web development skills. I developed it using HTML, CSS, and JavaScript, This was begininning when I started learning web development.  "
-    },
-    {
-      id: 6,
-      title: "Resturant Profile Website - Prime Chiya",
-      image: "img/primechiya.jpg",
-      link: "/",
-      description:
-        "Unable to provide a description for this project at the moment. However, it is a restaurant profile website for Prime Chiya, showcasing their offerings and ambiance. (ongoing project)"
     },
 
   ];

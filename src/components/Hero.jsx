@@ -29,7 +29,7 @@ const Hero = () => {
           {/* Social Icons */}
           <div className=" hidden md:flex flex-col gap-6 text-[2.5rem]  md:w-28 justify-center  items-center ">
             <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href="https://wa.me/qr/ITMSCTVDCRWCE1"><i
+            <a target="_blank" href="https://wa.me/message/FO2BXDEOJGRBN1"><i
               className="fa-brands fa-whatsapp"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/bibeksah/"><i
               className="fa-brands fa-linkedin"></i></a>

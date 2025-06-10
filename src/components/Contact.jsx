@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const Contact = () => {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const subject = subjectRef.current.value;
+    const message = messageRef.current.value;
+
+    const mailtoLink = `mailto:predatorbhai13@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Hi, I am ${name} (${email})\n\n${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section id="contact" className="pb-20  text-black">
       {/* Section Title */}
@@ -30,7 +52,7 @@ const Contact = () => {
               <h2 className="text-lg font-semibold">Call at</h2>
               <p>+977 9822301799</p>
             </a>
-            <a href="https://wa.me/qr/ITMSCTVDCRWCE1" className="flex flex-col items-center text-center" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/message/FO2BXDEOJGRBN1" className="flex flex-col items-center text-center" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-whatsapp text-[var(--primary)]  text-4xl opacity-80 mb-2" />
               <h2 className="text-lg font-semibold">Message me</h2>
               <p>on Whatsapp</p>
@@ -45,15 +67,12 @@ const Contact = () => {
               <i className="fa-regular fa-location-dot text-[var(--primary)]  text-4xl opacity-80 mb-2" />
               <h2 className="text-lg font-semibold">Visit at</h2>
               <p>My office, Tokha</p>
-
             </a>
 
             {/* Social Links */}
             <div className="flex flex-col items-center justify-center text-center">
-              {/* <i className="fa-solid fa-hashtag text-[var(--primary)]  text-4xl opacity-80 mb-2" /> */}
               <h2 className="text-lg font-semibold">Social Profiles</h2>
               <div className="flex justify-center space-x-8 text-3xl">
-
                 <a
                   href="https://facebook.com/"
                   target="_blank"
@@ -61,7 +80,8 @@ const Contact = () => {
                   className="hover:text-[var(--black6)] text-[var(--primary)] "
                 >
                   <i className="fa-brands fa-facebook" />
-                </a><a
+                </a>
+                <a
                   href="https://www.linkedin.com/in/bibeksah/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -69,15 +89,16 @@ const Contact = () => {
                 >
                   <i className="fa-brands fa-linkedin" />
                 </a>
-                <a target="_blank" href="https://github.com/predatorbro"  className="hover:text-[var(--black6)] text-[var(--primary)] "><i
-                  className="fa-brands fa-github"></i>
+                <a
+                  target="_blank"
+                  href="https://github.com/predatorbro"
+                  className="hover:text-[var(--black6)] text-[var(--primary)] "
+                >
+                  <i className="fa-brands fa-github"></i>
                 </a>
-
               </div>
             </div>
           </div>
-
-
         </div>
 
         {/* Right Side - Form */}
@@ -87,30 +108,38 @@ const Contact = () => {
             <span className="font-bold block">designs work or partnerships.</span>
           </p>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Name"
+              ref={nameRef}
+              required
               className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
             />
             <input
               type="email"
               placeholder="Email"
+              ref={emailRef}
+              required
               className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
             />
             <input
               type="text"
               placeholder="Subject"
+              ref={subjectRef}
+              required
               className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
             />
             <textarea
               placeholder="Message"
               rows="6"
+              ref={messageRef}
+              required
               className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
             />
             <button
               type="submit"
-              className=" bg-[var(--primary)]  text-white px-6 py-3 rounded shadow-md hover:opacity-80 transition-all"
+              className="bg-[var(--primary)] text-white px-6 py-3 rounded shadow-md hover:opacity-80 transition-all"
             >
               Send Message <i className="fa-solid fa-paper-plane ml-2" />
             </button>

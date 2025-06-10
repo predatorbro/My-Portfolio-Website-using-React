@@ -40,7 +40,7 @@ const Footer = () => {
           <h1 className="text-xl font-semibold mb-4 text-center">Social Links</h1>
           <div className="flex justify-end space-x-6 text-2xl">
             <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href="https://wa.me/qr/ITMSCTVDCRWCE1"><i
+            <a target="_blank" href="https://wa.me/message/FO2BXDEOJGRBN1"><i
               className="fa-brands fa-whatsapp"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/bibeksah/"><i
               className="fa-brands fa-linkedin"></i></a>
