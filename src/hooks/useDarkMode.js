@@ -4,7 +4,7 @@ export const useDarkMode = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('theme');
-      return saved === 'dark' ? 'dark' : 'light';
+      return saved ? (saved === 'dark' ? 'dark' : 'light') : 'dark';
     }
     return 'dark';
   });
@@ -13,8 +13,10 @@ export const useDarkMode = () => {
     const root = window.document.documentElement;
     const savedTheme = localStorage.getItem('theme');
     root.classList.remove('light', 'dark');
-    if (savedTheme === 'dark') {
+    if (savedTheme === 'dark' || !savedTheme) {
       root.classList.add('dark');
+    } else {
+      root.classList.add('light');
     }
   }, []);
 
