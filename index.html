@@ -3,27 +3,136 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Enhanced Favicon Setup -->
+  <link rel="icon" href="/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="/img/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/img/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" href="/img/favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+  <link rel="icon" href="/img/favicon/android-chrome-512x512.png" sizes="512x512" type="image/png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prasad bhai | Portfolio</title>
-  <!-- font awesome -->
+
+  <!-- Enhanced SEO Meta Tags -->
+  <title>Prasad Bhai - Web Developer | React & JavaScript Expert | Kathmandu, Nepal</title>
+  <meta name="description"
+    content="Experienced web developer from Kathmandu, Nepal with 1+ years of expertise in React, JavaScript, and modern web technologies. Successfully completed 10+ projects with satisfied clients. Specializing in responsive web design, full-stack development, and UI/UX solutions.">
+  <meta name="keywords"
+    content="Prasad Bhai, web developer Kathmandu, React developer Nepal, JavaScript developer, frontend developer, full-stack developer, UI/UX designer, web development services Nepal, portfolio, responsive web design">
+  <meta name="author" content="Prasad Bhai">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Geographic SEO -->
+  <meta name="geo.region" content="NP-3">
+  <meta name="geo.placename" content="Kathmandu">
+  <meta name="geo.position" content="27.7172;85.3240">
+  <meta name="ICBM" content="27.7172, 85.3240">
+
+  <!-- Language and Locale -->
+  <meta name="language" content="English">
+  <meta http-equiv="content-language" content="en-US">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://prasadbhai.com/">
+
+  <!-- Enhanced Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prasad Bhai Portfolio">
+  <meta property="og:url" content="https://prasadbhai.com/">
+  <meta property="og:title" content="Prasad Bhai - Web Developer | React & JavaScript Expert | Kathmandu, Nepal">
+  <meta property="og:description"
+    content="Experienced web developer from Kathmandu, Nepal with 1+ years of expertise in React, JavaScript, and modern web technologies. Successfully completed 10+ projects with satisfied clients.">
+  <meta property="og:image" content="https://prasadbhai.com/img/hero.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Prasad Bhai - Web Developer Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Enhanced Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@prasadbhai">
+  <meta name="twitter:creator" content="@prasadbhai">
+  <meta name="twitter:url" content="https://prasadbhai.com/">
+  <meta name="twitter:title" content="Prasad Bhai - Web Developer | React & JavaScript Expert">
+  <meta name="twitter:description"
+    content="Experienced web developer from Kathmandu, Nepal with 1+ years of expertise. Successfully completed 10+ projects with satisfied clients.">
+  <meta name="twitter:image" content="https://prasadbhai.com/img/hero.png">
+  <meta name="twitter:image:alt" content="Prasad Bhai - Web Developer Portfolio">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prasad Bhai",
+    "jobTitle": "Web Developer",
+    "description": "Experienced web developer from Kathmandu, Nepal specializing in React, Nextjs, JavaScript, and modern web technologies",
+    "url": "https://prasadbhai.com",
+    "image": "https://prasadbhai.com/img/hero.png",
+    "sameAs": [
+      "https://github.com/predatorbro",
+      "https://www.linkedin.com/in/bibeksah/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "Nepal"
+    },
+    "knowsAbout": ["React", "JavaScript", "Web Development", "Nextjs","Frontend Development", "Full-stack Development", "UI/UX Design"],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "description": "1+ years of web development experience with 10+ completed projects"
+    }
+  }
+  </script>
+
+  <!-- Professional Portfolio Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Prasad Bhai Portfolio",
+    "url": "https://prasadbhai.com",
+    "description": "Professional portfolio showcasing web development projects and skills",
+    "author": {
+      "@type": "Person",
+      "name": "Prasad Bhai"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://prasadbhai.com/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#3B82F6">
+  <meta name="msapplication-TileColor" content="#3B82F6">
+  <meta name="application-name" content="Prasad Bhai Portfolio">
+  <meta name="apple-mobile-web-app-title" content="Prasad Bhai">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://site-assets.fontawesome.com">
+  <link rel="dns-prefetch" href="//site-assets.fontawesome.com">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
     href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d" />
-
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
-
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
-
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
-
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
-
-  <!-- font awesome -->
 
 </head>
 
-<body class=" bg-gray-100">
-
+<body class="bg-gray-100">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

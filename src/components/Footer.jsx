@@ -7,11 +7,11 @@ const Footer = () => {
         {/* Left Section */}
         <div className="space-y-2">
           <div className="text-2xl font-semibold">
-            <a href="/" className=" hover:text-[var(--black3)]  text-[var(--white-main)]  ">
+            <a href="/" className=" hover:opacity-80">
               Prasad Bhai
             </a>
           </div>
-          <a href="#about" className="block text-white hover:underline text-center">
+          <a href="#about" className="block text-white hover:opacity-80 text-center">
             About Me
           </a>
         </div>
@@ -21,7 +21,7 @@ const Footer = () => {
           <h1 className="text-xl font-semibold mb-4">More</h1>
           <ul className="space-y-2">
             <li>
-              <a href="#experties" className="hover:underline">Skills</a>
+              <a href="#experties" className=" hover:opacity-80underline">Skills</a>
             </li>
             <li>
               <a href="#services" className="hover:underline">Services</a>
@@ -39,13 +39,13 @@ const Footer = () => {
         <div className="text-right">
           <h1 className="text-xl font-semibold mb-4 text-center">Social Links</h1>
           <div className="flex justify-end space-x-6 text-2xl">
-            <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook hover:opacity-80"></i></a>
             <a target="_blank" href="https://wa.me/message/FO2BXDEOJGRBN1"><i
-              className="fa-brands fa-whatsapp"></i></a>
+              className="fa-brands fa-whatsapp hover:opacity-80"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/bibeksah/"><i
-              className="fa-brands fa-linkedin"></i></a>
+              className="fa-brands fa-linkedin hover:opacity-80"></i></a>
             <a target="_blank" href="https://github.com/predatorbro"><i
-              className="fa-brands fa-github"></i></a>
+              className="fa-brands fa-github hover:opacity-80"></i></a>
 
           </div>
         </div>

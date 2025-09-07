@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
+import { useDarkMode } from "../hooks/useDarkMode";
+import SectionHeading from "./SectionHeading";
 
 const Contact = () => {
+  const { theme } = useDarkMode();
   const nameRef = useRef();
   const emailRef = useRef();
   const subjectRef = useRef();
@@ -24,15 +27,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pb-20  text-black">
+    <section id="contact" className={`pb-20 ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}>
       {/* Section Title */}
-      <div className="flex justify-center my-20">
-        <h2 className="text-3xl font-bold text-gray-700 relative mt-[-3rem]">
-          Contact Me
-          <span className="absolute left-0 bottom-0 w-1/2 h-[3px]  bg-[var(--primary)]  rounded-md"></span>
-          <span className="absolute left-0 bottom-[-5px] w-1/4 h-[3px]  bg-[var(--primary)]  rounded-md"></span>
-        </h2>
-      </div>
+      <SectionHeading text="Contact Me" />
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
@@ -77,7 +74,7 @@ const Contact = () => {
                   href="https://facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[var(--black6)] text-[var(--primary)] "
+                  className="hover:opacity-80"
                 >
                   <i className="fa-brands fa-facebook" />
                 </a>
@@ -85,14 +82,14 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/bibeksah/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[var(--black6)] text-[var(--primary)] "
+                  className="hover:opacity-80"
                 >
                   <i className="fa-brands fa-linkedin" />
                 </a>
                 <a
                   target="_blank"
                   href="https://github.com/predatorbro"
-                  className="hover:text-[var(--black6)] text-[var(--primary)] "
+                  className="hover:opacity-80"
                 >
                   <i className="fa-brands fa-github"></i>
                 </a>
@@ -114,28 +111,28 @@ const Contact = () => {
               placeholder="Name"
               ref={nameRef}
               required
-              className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
+              className={`w-full p-4 bg-[#a598f341] rounded outline-none ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}
             />
             <input
               type="email"
               placeholder="Email"
               ref={emailRef}
               required
-              className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
+              className={`w-full p-4 bg-[#a598f341] rounded outline-none ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}
             />
             <input
               type="text"
               placeholder="Subject"
               ref={subjectRef}
               required
-              className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
+              className={`w-full p-4 bg-[#a598f341] rounded outline-none ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}
             />
             <textarea
               placeholder="Message"
               rows="6"
               ref={messageRef}
               required
-              className="w-full p-4 bg-[#a598f341] text-black rounded outline-none"
+              className={`w-full p-4 bg-[#a598f341] rounded outline-none ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}
             />
             <button
               type="submit"
