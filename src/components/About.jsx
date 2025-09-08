@@ -10,7 +10,7 @@ const About = () => {
     <section id="about" className="pt-20  ">
       <SectionHeading text="Who Am I ?" />
 
-      <div className="flex flex-col md:flex-row gap-10 md:gap-5 lg:gap-10 mt-12 max-w-7xl mx-auto px-4 md:h-[28rem]">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-5 lg:gap-10 mt-12 max-w-7xl mx-auto px-4">
         <div
           className="flex-1 h-auto  w-[30rem] md:w-full md:h-fit px-4  mx-auto "
           data-aos="fade-up"

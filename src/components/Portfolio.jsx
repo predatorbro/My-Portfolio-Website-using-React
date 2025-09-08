@@ -170,7 +170,7 @@ const Portfolio = () => {
   }, [activeModal]);
 
   return (
-    <section id="projects" className="pt-32 relative">
+    <section id="projects" className="pt-20 relative">
 
       <SectionHeading text="My Projects" />
 

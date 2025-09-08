@@ -5,8 +5,6 @@ import SectionHeading from "./SectionHeading";
 const Skills = () => {
   const { theme } = useDarkMode();
 
-  // Debug logging
-  console.log('Skills component theme:', theme);
   const techCategories = [
     {
       name: "Frontend",
@@ -84,8 +82,6 @@ const Skills = () => {
       description: "Built websites for Electroma Trading and Prime Chiya. Also developed two web apps focused on solving very specific user problems — both are actively maintained with continuous updates and new versions. Aside from that, I've worked on a total of 6 successful projects."
     }
   ];
-  console.log("theme in skills page,", theme);
-  console.log("Theme condition check:", theme === 'dark' ? 'DARK MODE' : 'LIGHT MODE');
   return (
     <section id="experties" className="pt-20">
       <SectionHeading text="My Experties" />

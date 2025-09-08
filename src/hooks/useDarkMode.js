@@ -32,6 +32,7 @@ export const useDarkMode = () => {
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+    window.location.reload();
   };
 
   return { theme, toggleTheme };

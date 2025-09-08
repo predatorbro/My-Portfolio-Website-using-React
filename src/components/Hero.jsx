@@ -152,14 +152,14 @@ const Hero = () => {
 
           {/* Hero Text */}
           <div className="flex flex-col justify-center items-start w-full md:w-[45%] space-y-4 px-10" data-aos="fade-up">
-            <p className="text-[2rem] lg:text-[2.5rem] font-semibold" style={{color: 'var(--black8)'}}>Hi, Your mechanic for</p>
-            <p className="text-5xl sm:text-6xl  font-bold tracking-wide" style={{color: 'var(--blackmain)'}}>
+            <p className="text-[2rem] lg:text-[2.5rem] font-semibold" style={{ color: 'var(--black8)' }}>Hi, Your mechanic for</p>
+            <p className="text-5xl sm:text-6xl  font-bold tracking-wide" style={{ color: 'var(--blackmain)' }}>
               websites & webapps
             </p>
-            <p className="text-[2rem] lg:text-[2.5rem]  font-semibold" style={{color: 'var(--black8)'}}>
+            <p className="text-[2rem] lg:text-[2.5rem]  font-semibold" style={{ color: 'var(--black8)' }}>
               is here!!
             </p>
-            <p className="text-[1.3rem] text-justify max-w-[80%]" style={{color: 'var(--black7)'}}>
+            <p className="text-[1.3rem] text-justify max-w-[80%]" style={{ color: 'var(--black7)' }}>
               I design and build stunning websites and web apps that fits your business perfectly.
             </p>
             <div className="flex gap-4 mt-4">
@@ -177,9 +177,9 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="grid place-content-center mb-15   w-[90%] md:w-[45%] mr-15" data-aos="fade-up">
+          <div className="grid place-content-center mb-15 w-[90%] md:w-[45%] mr-15 h-fit overflow-hidden" data-aos="fade-up">
             <div className="slider" id="slider">
-              <div className="slider-box  overflow-x-hidden  rounded-xl  shadow-lg  ">
+              <div className="slider-box overflow-hidden rounded-xl shadow-lg ">
                 <div
                   className="content  flex transition-transform duration-700 ease-in-out  md:aspect-square xs:aspect-video aspect-square cursor-grab select-none"
                   ref={contentRef}
@@ -191,18 +191,18 @@ const Hero = () => {
                   onTouchMove={handleTouchMove}
                   onTouchEnd={handleTouchEnd}
                 >
-                  <Img src="/img/hero (1).png" alt="img5" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (2).png" alt="img1" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (3).png" alt="img2" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (4).png" alt="img3" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (5).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (6).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (7).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (8).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (9).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (10).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (11).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
-                  <Img src="/img/hero (12).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="lazy" loader={<div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (1).png" alt="img5" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (2).png" alt="img1" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (3).png" alt="img2" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (4).png" alt="img3" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (5).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (6).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (7).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (8).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (9).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (10).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (11).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
+                  <Img src="/img/hero (12).png" alt="img4" className="w-full flex-shrink-0 object-cover" loading="eager" loader={<div className="bg-gray-200 dark:bg-gray-700"><i className="fa-solid fa-spinner fa-spin text-4xl text-gray-500"></i><p className="mt-2 text-gray-500">Loading...</p></div>} />
                 </div>
               </div>
             </div>

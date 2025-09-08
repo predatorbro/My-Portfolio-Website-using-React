@@ -29,7 +29,7 @@ const Clients = () => {
   const { theme } = useDarkMode();
 
   return (
-    <section id="testimonial" className="py-20 relative mx-4">
+    <section id="testimonial" className="pt-20 relative mx-4">
       <SectionHeading text="From My Clients" />
 
       <div className="max-w-5xl mx-auto mt-16 shadow-lg rounded-2xl overflow-hidden cursor-grab">
