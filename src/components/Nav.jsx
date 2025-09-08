@@ -7,9 +7,6 @@ const Header = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { theme, toggleTheme } = useDarkMode();
-
-    // Debug logging for Nav component
-    console.log('Nav component theme:', theme);
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
@@ -42,10 +39,10 @@ const Header = () => {
             <header
                 className={`fixed top-0 left-0 w-full z-[999] transition-all duration-300 ${isScrolled
                     ? `shadow-md h-16 ${theme === 'dark' ? 'border-gray-700 bg-gray-800' : 'border-gray-200 bg-white'}`
-                    : "h-24"
-                    } ${theme === 'dark' ? 'bg-gray-800/90' : 'bg-white/80'}`}
+                    : "h-24 bg-transparent"
+                    }`}
             >
-                <div className="max-w-[110rem] px-20 mx-auto relative flex justify-between items-center h-full">
+                <div className="max-w-[110rem] px-15 mx-auto relative flex justify-between items-center h-full">
                     {/* Logo */}
                     <div className="relative">
                         <a
@@ -92,9 +89,6 @@ const Header = () => {
                             ))}
                         </ul>
                     </nav>
-
-
-                    {/* Nav for mobile */}
                     {/* Nav for mobile */}
                     <nav
                         className={`absolute -bottom-[28rem] right-16 md:hidden transition-all duration-300`}
@@ -148,7 +142,7 @@ const Header = () => {
                             aria-label="Toggle dark mode"
                         >
                             {theme === 'dark' ? (
-                                <i className="fa-solid fa-sun "></i>
+                                <i className="fa-regular fa-sun-bright "></i>
                             ) : (
                                 <i className="fa-solid fa-moon text-gray-600"></i>
                             )}

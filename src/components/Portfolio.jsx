@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Img } from 'react-image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 import SectionHeading from "./SectionHeading";
+import { useDarkMode } from "../hooks/useDarkMode";
 
 const Portfolio = () => {
   const [activeModal, setActiveModal] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const swiperRef = useRef(null);
+  const { theme } = useDarkMode();
 
   const projects = [
     {
@@ -196,55 +203,57 @@ const Portfolio = () => {
           onClick={() => setActiveModal(null)}
         >
           <div
-            className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-800 w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 rounded-2xl shadow-2xl relative transform transition-all duration-300 ease-out animate-in slide-in-from-bottom-4"
+            className={`w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 rounded-2xl shadow-2xl relative transform transition-all duration-300 ease-out animate-in slide-in-from-bottom-4 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-4 right-4 bg-gray-700 hover:opacity-80 text-white text-xl w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 z-10 shadow-lg"
+              className={`absolute top-4 right-4 text-xl w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 z-10 shadow-lg ${theme === 'dark' ? 'bg-gray-700 hover:opacity-80 text-white' : 'bg-gray-300 hover:bg-gray-400 text-gray-700'}`}
               onClick={() => setActiveModal(null)}
               aria-label="Close modal"
             >
               <i className="fa-solid fa-x"></i>
             </button>
-            <h1 className="text-2xl font-bold mt-6 text-gray-800 dark:text-white pr-8">{projects[activeModal].title}</h1>
-            <Img
-              src={projects[activeModal].images ? projects[activeModal].images[currentImageIndex] : projects[activeModal].image}
-              alt="Project Preview"
-              className="w-full mt-4 rounded-lg shadow-md"
-              loading="lazy"
-              loader={<div className="w-full h-64 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">Loading...</div>}
-            />
-
-            {/* Image Gallery Thumbnails */}
-            {projects[activeModal].images && projects[activeModal].images.length > 1 && (
-              <div className="flex gap-3 mt-6 pb-2">
+            <h1 className={`text-2xl font-bold mt-6 pr-8 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>{projects[activeModal].title}</h1>
+            {projects[activeModal].images && projects[activeModal].images.length > 1 ? (
+              <Swiper
+                modules={[Autoplay]}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                loop={true}
+                initialSlide={currentImageIndex}
+                onSlideChange={(swiper) => setCurrentImageIndex(swiper.activeIndex)}
+                onSwiper={(swiper) => swiperRef.current = swiper}
+                className="w-full mt-4 rounded-lg shadow-md h-128 cursor-grab"
+              >
                 {projects[activeModal].images.map((image, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentImageIndex(index)}
-                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 ${currentImageIndex === index
-                        ? 'border-primary shadow-lg scale-110'
-                        : 'border-gray-200 dark:border-gray-600 hover:border-primary/50'
-                      }`}
-                  >
+                  <SwiperSlide key={index}>
                     <Img
                       src={image}
-                      alt={`${projects[activeModal].title} ${index + 1}`}
+                      alt={`Project Preview ${index + 1}`}
                       className="w-full h-full object-cover"
                       loading="lazy"
-                      loader={<div className="w-full h-full bg-gray-200 dark:bg-gray-700"></div>}
+                      loader={<div className="w-full h-full bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">Loading...</div>}
                     />
-                  </button>
+                  </SwiperSlide>
                 ))}
-              </div>
+              </Swiper>
+            ) : (
+              <Img
+                src={projects[activeModal].images ? projects[activeModal].images[0] : projects[activeModal].image}
+                alt="Project Preview"
+                className="w-full mt-4 rounded-lg shadow-md"
+                loading="lazy"
+                loader={<div className="w-full h-128 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">Loading...</div>}
+              />
             )}
+
+
             <div className="flex flex-wrap gap-4 mt-6">
               {projects[activeModal].link && projects[activeModal].link !== "https://" && (
                 <a
                   href={projects[activeModal].link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary/80 transition-colors flex items-center gap-2"
+                  className={`px-4 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2 ${theme === 'dark' ? 'bg-primary hover:bg-primary/80 text-white' : 'text-gray-700'}`}
                 >
                   <i className="fa-solid fa-external-link-alt"></i> Visit Site
                 </a>
@@ -254,7 +263,7 @@ const Portfolio = () => {
                   href={projects[activeModal].github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition-colors flex items-center gap-2"
+                  className={`px-4 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2 ${theme === 'dark' ? 'bg-gray-700 hover:opacity-80 text-white' : 'bg-gray-800 hover:bg-gray-900 text-white'}`}
                 >
                   <i className="fa-brands fa-github"></i> View Code
                 </a>
@@ -269,7 +278,7 @@ const Portfolio = () => {
               )}
             </div>
             <div className="mt-6">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">Technologies Used</h3>
+              <h3 className={`text-lg font-semibold mb-2 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>Technologies Used</h3>
               <div className="flex flex-wrap gap-2">
                 {projects[activeModal].tech.map((tech, index) => (
                   <span
@@ -281,7 +290,7 @@ const Portfolio = () => {
                 ))}
               </div>
             </div>
-            <p className="mt-6 text-gray-600 dark:text-gray-300 text-base leading-relaxed">
+            <p className={`mt-6 text-base leading-relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
               {projects[activeModal].description}
             </p>
             <button

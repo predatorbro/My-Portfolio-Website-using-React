@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className=" bg-[var(--primary)]  text-white pt-16 pb-8">
-      <div className=" max-w-[110rem]  mx-auto px-22 flex md:justify-between md:flex-row items-center md:items-start flex-col gap-8">
+      <div className=" max-w-[110rem]  mx-auto px-15 flex md:justify-between md:flex-row items-center md:items-start flex-col gap-8">
         {/* Left Section */}
         <div className="space-y-2">
           <div className="text-2xl font-semibold">

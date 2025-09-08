@@ -139,7 +139,7 @@ const Hero = () => {
           <div className="floating-bubble bubble-7"></div>
           <div className="floating-bubble bubble-8"></div>
         </div>
-        <div className="max-w-[110rem] md:px-10 mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between justify-center h-full relative z-10">
+        <div className="max-w-[110rem] overflow-hidden md:px-10 mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between justify-center h-full relative z-10">
           {/* Social Icons */}
           <div className=" hidden md:flex flex-col gap-6 text-[2.5rem]  md:w-28 justify-center  items-center ">
             <a target="_blank" href="https://facebook.com/predatorbro"><i className="fa-brands fa-facebook"></i></a>
@@ -177,7 +177,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="grid place-content-center mb-15   w-[90%] md:w-[45%]" data-aos="fade-up">
+          <div className="grid place-content-center mb-15   w-[90%] md:w-[45%] mr-15" data-aos="fade-up">
             <div className="slider" id="slider">
               <div className="slider-box  overflow-x-hidden  rounded-xl  shadow-lg  ">
                 <div
