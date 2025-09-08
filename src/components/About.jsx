@@ -12,13 +12,13 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row gap-10 md:gap-5 lg:gap-10 mt-12 max-w-7xl mx-auto px-4 md:h-[28rem]">
         <div
-          className="flex-1 h-[30rem]  w-[30rem] md:w-full md:h-full px-4  mx-auto "
+          className="flex-1 h-auto  w-[30rem] md:w-full md:h-fit px-4  mx-auto "
           data-aos="fade-up"
         >
           <Img
-            src="/img/purple1.jpg"
+            src="/img/model.png"
             alt="about-img"
-            className="w-full h-full rounded-lg object-cover"
+            className="w-full h-full rounded-lg object-fit"
             loading="lazy"
             loader={<div>Loading...</div>}
           />
@@ -41,9 +41,11 @@ const About = () => {
             data-aos="fade-up"
             className={`text-lg text-justify pl-4 ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}
           >
-            I design and develop services for customers specializing in creating stylish, modern websites, web services,
+            {/* I design and develop services for customers specializing in creating stylish, modern websites, web services,
             and online stores. My passion is to design digital user experiences through meaningful interactions.
-            Check out my Portfolio.
+            Check out my Portfolio. */}
+            I solve real-life problems through innovative web solutions and applications. I specialize in creating modern websites, web applications, and complete digital experiences that make a difference. For me, coding isn't just a profession - it's a way of life. I live and breathe code, crafting meaningful interactions that connect users with the digital world. Check out my Portfolio.
+
           </p>
           <hr data-aos="fade-up" className={`border-t ${theme === 'dark' ? 'border-gray-600' : 'border-gray-300'}`} />
 
